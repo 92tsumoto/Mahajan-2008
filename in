@@ -1,0 +1,139 @@
+/* Model type */
+/* model_type == 0 --> using drug concentration */
+/* model_type == 1 --> using block rate  */
+1
+
+/* Drug type */
+/* drug_type == 0 --> without facilitation */
+/* drug_type == 1 --> with facilitation  */
+/* drug_type == 2 --> only facilitation  */
+0
+
+/* cell type */
+/* celltype == 0 --> Endo */
+/* celltype == 1 --> Mid */
+/* celltype == 2 --> Epi */
+2
+
+/* Base cycel length */
+400
+//1000
+//2000
+//4000
+
+/* ndis */
+0.0075           // for 3ms pulse width with BCL400
+//0.002           // for 1ms pulse width with BCL500
+//0.001         // for 1ms pulse width with BCL1000
+//0.0005        // for 1ms pulse width with BCL2000
+
+/* Istim */
+-15.0	
+
+/* Block rate */
+1.0
+
+/* drug concentration */
+//0.0E-9        //0%Ikr inhibition
+100.0E-9                // ~50%Ikr inhibition
+//1000.0E-9             // ~50%Ikr inhibition
+
+/* block parameters */
+/* IC50 (nM), hill coefficent */
+145.0E-9        1.15
+
+/* fraction parameters */
+/* EC50 (nM), fhill coefficent */
+92.8E-9       1.50
+
+/* number of datas */
+1
+
+/* line width */
+2
+
+/* x1, y1 */
+/*
+-87.169816169406		// Vm  = x[0]
+0.001075453357		// m   = x[1]
+0.990691306716		// h   = x[2]
+0.993888937283		// j   = x[3]
+0.000018211252		// c1  = x[4]
+0.979322592773		// c2  = x[5]
+0.001208153482		// xilca = x[6]
+0.000033616596		// xilba = x[7]
+0.004173008466		// xi2ca = x[8]
+0.015242594688		// xi2ba = x[9]
+0.007074239331		// xr  = x[10]
+0.048267587131		// xs1 = x[11]
+0.105468807033		// xs2 = x[12]
+0.00364776906		// xtos = x[13]
+0.174403618112		// ytos = x[14]
+0.003643592594		// xtof = x[15]
+0.993331326442		// ytof = x[16]
+0.0006679257264		// xir (uM/ms) = x[17]
+22.171689894953		// tropi (uM) = x[18]
+19.864701949854		// trops (uM) = x[19]
+0.226941113355		// Ca_submem = x[20]
+1.716573130685		// Ca_dyad = x[21]
+104.450004990523	// Ca_NSR (uM) = x[22]
+97.505463697266		// Ca_JSR (uM) = x[23]
+0.256752008084		// Cai (uM) = x[24]
+11.441712311614		// Nai (mM) = x[25]
+//0.000129			// facilitation variable xr2  = x[21]
+*/
+-8.717537233066818e+01
+1.074454551566131e-03
+9.907031470818922e-01
+9.938954795892571e-01
+1.819959194814770e-05
+9.793444507794395e-01
+1.204570702571505e-03
+3.359573944824534e-05
+4.161470402985583e-03
+1.523589121096757e-02
+7.068751415416477e-03
+4.821760654305341e-02
+1.053845633177331e-01
+3.646483929184400e-03
+1.744238446759004e-01
+3.642297463430279e-03
+9.933372849549106e-01
+6.673560430633981e-03
+2.217257846812410e+01
+1.986694289317438e+01
+2.269750723126951e-01
+1.715445336468355e+00
+1.044501752222028e+02
+9.750377452805773e+01
+2.567669804395588e-01
+1.144836073542306e+01
+
+
+/* direction of time */
+1
+/* end time. 0.0 = nolimit of integration */ 
+0
+
+/* dIstim */
+0.1
+
+1		/* number of period */
+200		/* strip for integral */
+0		/* poincare flag 0 --- poincare/1 --- orbit */
+0		/* write file 0 --- not write/1 --- write */
+0		/* write flag 0 --- poincare/1 --- orbit */
+0		/* if 1 then period is PI*/
+0		/* data output swithc; if 1 then data out*/
+1		/* screen output swithc; if 1 then data out*/
+0		/* current data output; if 1 then data out*/
+0		/* if 1 then debug */
+
+100 600 100 600     /* graph location */
+-100 60 -0.1 1.1		/* scaling */
+30 0.3 1 1			/* label strip & interval */
+1 1			/* floating point */
+1			/* axis/grid */
+-sony-fixed-medium-r-normal--24-170-100-100-c-120-iso8859-1 /* font */
+-212 -460 -40 -288	/* arrow */
+1	/* command */
